@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java-base-and-improvement.iml" filepath="$PROJECT_DIR$/.idea/Java-base-and-improvement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/base-advanced.iml" filepath="$PROJECT_DIR$/base-advanced.iml" />
+      <module fileurl="file://$PROJECT_DIR$/concurrenct/concurrenct.iml" filepath="$PROJECT_DIR$/concurrenct/concurrenct.iml" />
+    </modules>
+  </component>
+</project>
