@@ -3,6 +3,8 @@ package com.alibaba_tencent.concurrency.lock;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+import java.util.concurrent.TimeUnit;
+
 /**
  *  死锁演示 及 定位分析
  *
@@ -42,6 +44,12 @@ class MyRunnableImpl implements Runnable {
     public void run() {
         synchronized (lock1) {
             System.out.println(Thread.currentThread().getName() + "获得锁" + lock1 + ",并尝试获取锁" + lock2);
+
+            try {
+                TimeUnit.SECONDS.sleep(2);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
 
             synchronized (lock2) {
                 System.out.println(Thread.currentThread().getName() + "获得锁" + lock2);
